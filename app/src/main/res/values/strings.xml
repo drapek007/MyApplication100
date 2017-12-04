@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppBad</string>
+    <string name="title_activity_tymczasowe">tymczasowe</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
