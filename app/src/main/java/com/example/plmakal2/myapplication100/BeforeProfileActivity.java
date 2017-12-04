@@ -34,10 +34,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class BeforeProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
-    //firebase auth object
     private FirebaseAuth firebaseAuth;
 
-    //view objects
+
     private TextView textViewUserEmail2;
     private EditText inputName;
 
@@ -65,15 +64,14 @@ public class BeforeProfileActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_before_profile);
 
 
-        //initializing firebase authentication object
+
         firebaseAuth = FirebaseAuth.getInstance();
 
-        //if the user is not logged in
-        //that means current user will return null
+
         if(firebaseAuth.getCurrentUser() == null){
-            //closing this activity
+
             finish();
-            //starting login activity
+
             startActivity(new Intent(this, LoginActivity.class));
         }
 
@@ -101,8 +99,6 @@ public class BeforeProfileActivity extends AppCompatActivity implements View.OnC
         buttonAdd = (Button) findViewById(R.id.button7);
 
 
-
-        //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.floatingActionButton);
 
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
