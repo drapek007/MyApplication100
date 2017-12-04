@@ -75,10 +75,10 @@ public class BeforeProfileActivity extends AppCompatActivity implements View.OnC
             startActivity(new Intent(this, LoginActivity.class));
         }
 
-        //getting current user
+
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        //initializing views
+
         inputName = (EditText) findViewById(R.id.editText7);
 
         textViewUserEmail2 = (TextView) findViewById(R.id.textViewUserEmail2);
